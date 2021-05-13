@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contest | DISK Pizza</title>
+    <meta name="description" content="Disk Pizza">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css"> 
+    <script type="text/javascript" src="scripts/jquery-3.5.1.min.js"></script>   
+    <script type="text/javascript" src="scripts/global.js" defer></script>
+
+    
+
+    <!-- put individual style and javaascript sheet here-->
+    <script type="text/javascript" src="scripts/contest.js"></script>
+    
+    <link rel="stylesheet" href="css/contest.css">
+</head>
+
+<body>
+
+    <div id="header-container">
+        <header class="page-container">
+            <nav>
+                <h2 id="logo"><a href="index.html"><span id="logo-accent">Disk</span>Pizza</a></h2>
+                <span class="spacer"></span>
+                <ul>
+                    <li><a href="ourstory.html">Our Story</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="dailyspecials.html">Daily Special</a></li>
+                    <li><a href="contest.html">Contest</a></li>
+                    <li><a href="giftcard.html">Gift Cards</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="#" class="button">Order Now</a></li>
+ 
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main id="main" class="page-container">
+        <div class="center">
+            <h1>Free Pizza for Whole Year!</h1>
+            <h2 id="subheading">Try Your Luck in a free lottery to win daily pizza.</h2>
+        </div>
+                    <div id="formarea">
+                        <fieldset>
+                        <LEGEND> Fill the below form to get a ticket number. </Legend>                    
+
+    
+
+                        <form action="#confirmation" class="form" method="post" name="form" id="form">                           
+                            <div class="flavourinput" id="form_flavour">
+                                <label for="input_flavour" class="flavourquestion">What is your favourite pizza flavour?</label>
+                                 <div class="options">
+                                        <input id="cheese" name="input_flavour" type="radio" value="A"/>
+                                        <label for="cheese">Cheese</label>
+                                   
+                                        <input id="pepperoni" name="input_flavour" type="radio" value="B"/>
+                                        <label for="pepperoni">Pepperoni</label>
+                                   
+                                        <input id="chicken" name="input_flavour" type="radio" value="C"/>
+                                        <label for="chicken">Chicken Tandoori</label>
+                                  
+                                        <input id="veggie" name="input_flavour" type="radio" value="D"/>
+                                        <label for="veggie">Veggie</label>
+                                  
+                                        <input id="margherita" name="input_flavour" type="radio" value="E"/>
+                                        <label for="margherita">Margherita</label>
+                                 
+                                <p id="flavourerror"></p>
+                            </div>   
+                            </div> 
+
+                            
+                                <div class="input" id="form_name">
+                                    <label class="sublabel" for="input_name">Name: </label>
+                                    <input class="form_control" id="input_name" name="input_name" placeholder="John Doe" type="text" /> <p id="nameerror"></p>
+                                </div> 
+                            
+
+                            <div class="input" id="form_email">
+                                <label for="input_email">Email: </label>
+                                <input class="form_control" id="input_email" name="input_email" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" placeholder="email@email.com" type="text" /> <p id="emailerror"></p>
+                            </div>
+
+                            <div class="input" id="form_phone">
+                                <label for="iput_phone">Phone: </label>
+                                <input class="form_control" id="input_phone" name="input_phone"  placeholder="1234567890" type="number" /> <p id="phoneerror"></p>
+                            </div>
+
+                            <div class="input">
+                                <label for="input_agree">
+                                    <input id="input_agree" name="input_agree" type="checkbox" value="1" required/> I have read and agree to the terms and conditions.  
+                                </label>
+                                <p id="error"></p>
+                            </div>
+                              <div class="center">
+                                <input type="submit" value="Submit" name="submit" class="button"/>
+                                </div>
+                                </fieldset>
+                            
+                        </form>
+                        </div>
+</div>
+
+     <div id="confirmation">
+    <h3>Thank you <span id="thankyouCustomer"></span> for your participation!</h3>
+    
+        <p class="token">Your token number is <span id="token"></span>. </p>
+    <div class="playnow">You have 3 tries to win. Try your luck now! </div>   
+
+<div id="results">
+<div>
+<button id="play1">Try 1</button>
+<p id="result1" class="result">000</p>  
+</div>
+<div>
+<button id="play2">Try 2</button>
+<p id="result2" class="result">000</p>  
+</div>
+<div>
+<button id="play3">Try 3</button>
+<p id="result3" class="result">000</p>  
+</div>
+</div>
+
+<div id="finalmessage"> Oh ho! You have lost this time. Better luck next time.
+    </div>
+</div>
+</main>
+<footer>
+        <div class="page-container col-1">
+             <a href="#logo" class="button" id="toTop">Top</a>
+            <ul>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li>Copyright &#169; 2020 DISK Pizza</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>        

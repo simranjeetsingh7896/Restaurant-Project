@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gift Card | DISK Pizza</title>
+    <meta name="description" content="Disk Pizza">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="scripts/global.js" defer></script>
+
+    <!-- put individual style and javaascript sheet here-->
+    <link rel="stylesheet" href="css/giftcard.css">
+    <script src="scripts/giftcard.js" defer></script>
+</head>
+
+<body>
+
+    <div id="header-container">
+        <header class="page-container">
+            <nav>
+                <h2 id="logo"><a href="index.html"><span id="logo-accent">Disk</span>Pizza</a></h2>
+                <span class="spacer"></span>
+                <ul>
+                    <li><a href="ourstory.html">Our Story</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="dailyspecials.html">Daily Special</a></li>
+                    <li><a href="contest.html">Contest</a></li>
+                    <li><a href="giftcard.html">Gift Cards</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="#" class="button">Order Now</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main id="main" class="page-container">
+        <!-- put content here-->
+        <h1>Customize your Gift Card!</h1>
+        <form name="card">
+
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" name="amount" required step="0.01">
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+
+            <input class="button" type="submit" value="Preview">
+        </form>
+
+        <div id="preview">
+            <h2 id="logo"><span id="logo-accent">Disk</span><span id="white">Pizza</span></h2>
+            <p id="showName">Name</p>
+            <p id="showPrice">Amount: $<span id="showAmount">50</span></p>
+            <p id="showNumber">Card #1234 5678 91011</p>
+            <p id="showMessage">Message</p>
+        </div>
+
+        <div class="orderBtnContainer">
+            <a id="orderCard" href="#" class="button">Order Card Now!</a>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="page-container col-1">
+            <a href="#logo" class="button" id="toTop">Top</a>
+            <ul>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li>Copyright &#169; 2020 DISK Pizza</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

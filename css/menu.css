@@ -1,0 +1,113 @@
+/* GENERAL LAYOUT */
+main {
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+h1 {
+    color: #950714;
+    font-weight: 700;
+    font-size: 3em;
+    margin: 1em 0;
+    text-align: center;
+
+}
+
+h3 {
+  text-transform: none;
+  font-weight: 400;
+  text-align: center;
+}
+
+.col-2 h2 {
+  text-align: center;
+  margin: 1em auto;
+}
+
+.col-3-3 h2 {
+  text-align: center;
+  margin: 1em auto;
+}
+.col-2 ul li { 
+  margin: 0.7em 0;
+}
+
+.col-3 ul li { 
+  margin: 0.7em 0;
+}
+li {
+  list-style: none;
+  margin-top: 0.6em;
+}
+p {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+h2+p {
+  text-align: center;
+  margin-bottom: 1em;
+}
+/* LAYOUT WITH FLEXBOX*/
+#makeyourown {
+  margin-top: 3em;
+  text-align: center;
+
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  
+}
+.col-3 {
+  display: inline-block;
+  flex: 1 0 0;
+  padding: 1em;  
+}
+.col-3:last-child {
+  flex: 1 0 100%;
+}
+.col-3-3 {
+  display: inline-block;
+  flex: 1 0 0;
+  padding: 1em;
+  text-align: center;
+}
+.col-2 {
+  flex: 1 0 0;
+}
+/* IMAGE */
+.image-container img {
+  margin-top: 90px;
+}
+.switchImg {
+  display: none;
+}
+.images {
+  margin-top: -3em;
+}
+/* MENU */
+.menu-name {
+  font-weight: bold;
+}
+.side-menu {
+  margin-top: 2.5em;
+  margin-left: 0;
+  margin-bottom: 2em;
+}
+
+.sidemenu h2 {
+  text-align: center;
+  margin: 1em 0;
+}
+#drinks {  
+  text-align: center
+}
+#desserts ul li {  
+  text-align: center
+}
+
+[id^="menu"]:hover {
+  color: #950714;
+  text-decoration: underline;
+}

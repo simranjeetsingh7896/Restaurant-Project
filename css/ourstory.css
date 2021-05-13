@@ -1,0 +1,71 @@
+/* GENERAL LAYOUT */
+main {
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+h1 {
+    color: #950714;
+    font-weight: 700;
+    font-size: 3em;
+    margin: 1em 0;
+}
+
+.col-2 h2 {
+    margin: 2em 0;
+}
+#header-ourstory {
+  text-align:center;
+}
+/* LAYOUT WITH FLEXBOX */
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1em;
+}
+.col-2 {
+  flex: 1 0 0;
+}
+/* SENTENCE */
+#sentence1 {
+  padding:2em 1em 0 0;
+  text-align:justify;
+}
+
+#sentence1 h2 {
+text-align: right;
+}
+#sentence2 {
+  padding:2em 0 0 1em;
+  text-align:justify;
+}
+#sentence2 h2 {
+  text-align:right;
+}
+#sentence2 h2 {
+text-align: left;
+}
+/* SLIDESHOW */
+[id^="slideshow"] {
+  position: relative;
+}
+[class^="slides"] {
+  display:none;
+}
+/* PREVIOUS AND NEXT ARROW */
+[id^="prev"], [id^="next"] {
+  cursor:pointer;
+  position:absolute;
+  top:47%;
+  color:#fff;
+  font-weight:bold;
+  font-size:35px;
+}
+[id^="prev"] {
+  left:0;
+}
+[id^="next"] {
+  right:0;
+}
+[id^="prev"]:hover, [id^="next"]:hover {
+  background-color:#000;
+}

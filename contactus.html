@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Contact Us | DISK Pizza</title>
+      <meta name="description" content="Disk Pizza">
+      <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/global.css">
+      <script src="scripts/global.js" defer></script>  
+
+<!-- put individual style and javaascript sheet here-->    
+      <link rel="stylesheet" href="css/contactus.css">
+      <script src="scripts/contactus.js"></script>
+   </head>
+   <body>
+      <!-- header -->             
+      <div id="header-container">
+         <header class="page-container">
+            <nav>
+               <h2 id="logo"><a href="index.html"><span id="logo-accent">Disk</span>Pizza</a></h2>
+               <span class="spacer"></span>
+               <ul>
+                 <li><a href="ourstory.html">Our Story</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="dailyspecials.html">Daily Special</a></li>
+                    <li><a href="contest.html">Contest</a></li>
+                    <li><a href="giftcard.html">Gift Cards</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="#" class="button">Order Now</a></li>
+               </ul>
+            </nav>
+         </header>
+      </div>
+
+      <!-- main -->  
+      <main id="main">
+         <h1>Contact Us</h1>
+         <form action="#" method="post" id="contact-form" name="contactform" >
+            <div>
+               <label for="fname">Full Name </label>
+            </div>
+            <div>
+               <input type="text" id="fname" name="fullname" placeholder="Enter your name" />
+            </div>
+            <div>
+               <label for="email">Email </label>
+            </div>
+            <div>
+               <input type="text" id="email" name="Email" placeholder="Enter your email" />
+            </div>
+            <div>
+               <label for="subject">Subject </label>
+            </div>
+            <div>
+               <select name="sub" id="subject">
+                  <option value="0">-----Select-----</option>
+                  <option value="food quality">Food quality</option>
+                  <option value="delivery issues">Delivery issue</option>
+                  <option value="menu price">Menu's price</option>
+                  <option value="advertisement">Advertisement</option>
+                  <option value="buying franchaise">Buying franchaise</option>
+                  <option value="other">Other</option>
+               </select>
+            </div>
+            <div>
+               <label for="message">Message</label>
+            </div>
+            <div>
+               <textarea  id="message" name="msg" rows="6" cols="38" placeholder="Enter your message"></textarea>
+            </div>
+            <div id="submit_button">             
+               <input type="submit" value="Submit" name="submit" id="submit" class="button" />         
+            </div>
+         </form>
+         <!--#### OUTPUT MESSAGE (HIDDEN UNTIL FORM VALIDATES) #### -->
+         <div id="thanks_msg">
+            <h2>Thank you <span id="thanksCustomer"></span> for your Feedback </h2>
+            <p>Your message has reached to concerned department.</p>
+         </div>
+      </main>
+      <!-- aside --> 
+      <aside id="aside">
+         <h2>Reach us</h2>
+         <p>You can reach us through various ways as per your convenience. Use the contact form on the left for any questions or requests, concerning our services.</p>
+         <p>You can also contact via phone or social media for quick resolutions.</p>
+         <p>Below you can find a quick detail to contact our resturant</p>
+         <h2>Mailing Address</h2>
+         <p>DISK Pizza 100 Queen St W, Toronto, Ontario M5H 2N1 Canada</p>
+         <h2>Other Ways</h2>
+         <p><b>Phone: </b> +1-888-842-1186</p>
+         <p><b>Email: </b> <a href="mailto:hello@diskpizza.com"> hello@diskpizza.com</a></p>
+         <h2>Follow us: </h2>
+         <div class="followus">
+            <a href="https://www.instagram.com/"><img src="images/logo2.png" alt="Photo of insta" height="30"/></a>
+            <a href="https://www.facebook.com/"><img src="images/logo3.jpg" alt="Photo of facebook" height="30"></a>
+            <a href="https://twitter.com/"><img src="images/logo4.png" alt="Photo of twitter" height="30"></a>
+         </div>
+      </aside>
+      <!-- footer --> 
+<footer>
+        <div class="page-container col-1">
+             <a href="#logo" class="button" id="toTop">Top</a>
+            <ul>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li>Copyright &#169; 2020 DISK Pizza</li>
+            </ul>
+        </div>
+    </footer>
+   </body>
+</html>
+
